@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="uk" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DRIVE SCHOOL — автошкола в Ірпені</title>
+  <meta name="description" content="DRIVE SCHOOL — сучасна автошкола в Ірпені. Навчання водінню категорії B на механічній та автоматичній коробці передач.">
+  <meta name="theme-color" content="#0a1f44">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230a1f44'/%3E%3Cpath d='M14 40l6-14h24l6 14v8h-6v-4H20v4h-6z' fill='%2338bdf8'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ШАПКА -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#home" class="logo" aria-label="DRIVE SCHOOL — на головну">
+        <span class="logo__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="22" height="22"><path d="M5 20l3-7h16l3 7v4h-3v-2H8v2H5z" fill="currentColor"/><circle cx="10" cy="21" r="1.6" fill="#0a1f44"/><circle cx="22" cy="21" r="1.6" fill="#0a1f44"/></svg>
+        </span>
+        <span class="logo__text">DRIVE<span> SCHOOL</span></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Головне меню">
+        <a href="#about" class="nav__link">Про нас</a>
+        <a href="#categories" class="nav__link">Навчання</a>
+        <a href="#cars" class="nav__link">Автомобілі</a>
+        <a href="#advantages" class="nav__link">Переваги</a>
+        <a href="#reviews" class="nav__link">Відгуки</a>
+        <a href="#contacts" class="nav__link">Контакти</a>
+        <button class="btn btn--primary nav__cta" type="button" data-open-modal>Записатися</button>
+      </nav>
+
+      <button class="burger" id="burger" type="button" aria-label="Відкрити меню" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ГОЛОВНИЙ ЕКРАН -->
+    <section class="hero" id="home">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <span class="eyebrow reveal">DRIVE SCHOOL · Ірпінь</span>
+          <h1 class="hero__title reveal" style="--d:.08s">Твоя дорога до свободи починається тут</h1>
+          <p class="hero__text reveal" style="--d:.16s">
+            Професійне навчання водінню з досвідченими інструкторами, сучасними автомобілями
+            та зручним графіком. Від першого уроку до впевненого керування в місті.
+          </p>
+          <div class="hero__actions reveal" style="--d:.24s">
+            <button class="btn btn--primary btn--lg" type="button" data-open-modal>Записатися на навчання</button>
+            <a href="#categories" class="btn btn--ghost btn--lg">Дізнатися більше</a>
+          </div>
+          <ul class="hero__stats reveal" style="--d:.32s">
+            <li><strong>B</strong><span>категорія навчання</span></li>
+            <li><strong>МКПП / АКПП</strong><span>на вибір</span></li>
+            <li><strong>1:1</strong><span>індивідуальний підхід</span></li>
+          </ul>
+        </div>
+
+        <div class="hero__visual reveal" style="--d:.2s">
+          <div class="hero__frame">
+            <img
+              src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80"
+              alt="Сучасний автомобіль на дорозі"
+              width="1200" height="800"
+              data-fallback="Сучасний автомобіль"
+              fetchpriority="high">
+          </div>
+          <div class="floating-card floating-card--a">
+            <span class="floating-card__icon">✓</span>
+            <div><strong>Практика з першого заняття</strong><small>Їзда з інструктором</small></div>
+          </div>
+          <div class="floating-card floating-card--b">
+            <span class="floating-card__icon">★</span>
+            <div><strong>Гнучкий розклад</strong><small>Вранці, ввечері, у вихідні</small></div>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-hint" aria-label="Прокрутити до розділу «Про нас»"><span></span></a>
+    </section>
+
+    <!-- ПРО НАС -->
+    <section class="section" id="about">
+      <div class="container about">
+        <div class="about__text">
+          <span class="eyebrow reveal">Про нас</span>
+          <h2 class="section__title reveal">Автошкола, де навчають їздити впевнено</h2>
+          <p class="reveal">
+            DRIVE SCHOOL — це демонстраційна автошкола в Ірпені. Ми будуємо навчання навколо
+            ученика: пояснюємо спокійно, без поспіху та зайвого тиску, щоб ви почувалися
+            комфортно за кермом уже з перших занять.
+          </p>
+          <p class="reveal">
+            Теорія допомагає зрозуміти правила, а практика — застосувати їх у реальному русі.
+            Ми поєднуємо обидва напрями, щоб ви не просто склали іспит, а стали
+            відповідальним водієм.
+          </p>
+          <ul class="checklist reveal">
+            <li>Зрозумілі пояснення без складних термінів</li>
+            <li>Навчальні маршрути в місті та за його межами</li>
+            <li>Підтримка ученика на кожному етапі</li>
+          </ul>
+        </div>
+
+        <div class="about__side">
+          <div class="instructors reveal">
+            <h3>Наші інструктори</h3>
+            <p class="muted">Інструктори — досвідчені практики, які вміють знайти підхід до людей з різним рівнем впевненості. Нижче — демонстраційні картки.</p>
+            <div class="instructors__list">
+              <div class="instructor">
+                <span class="avatar" aria-hidden="true">І</span>
+                <div><strong>Інструктор</strong><small>Механічна коробка передач</small></div>
+              </div>
+              <div class="instructor">
+                <span class="avatar avatar--alt" aria-hidden="true">І</span>
+                <div><strong>Інструктор</strong><small>Автоматична коробка передач</small></div>
+              </div>
+              <div class="instructor">
+                <span class="avatar avatar--light" aria-hidden="true">І</span>
+                <div><strong>Інструктор</strong><small>Міська практика та маршрути</small></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- КАТЕГОРІЇ НАВЧАННЯ -->
+    <section class="section section--tint" id="categories">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow reveal">Навчання</span>
+          <h2 class="section__title reveal">Оберіть свій формат навчання</h2>
+          <p class="section__lead reveal">Категорія B — для керування легковими автомобілями. Оберіть коробку передач, яка вам підходить.</p>
+        </div>
+
+        <div class="grid grid--3">
+          <article class="card card--category reveal">
+            <div class="card__badge">B</div>
+            <h3>Категорія B</h3>
+            <p>Базовий курс для керування легковим автомобілем: теорія правил дорожнього руху та практичне водіння.</p>
+            <ul class="card__list">
+              <li>Теоретичні заняття</li>
+              <li>Практичне водіння</li>
+              <li>Підготовка до іспиту</li>
+            </ul>
+            <button class="card__link" type="button" data-open-modal data-category="B">Записатися →</button>
+          </article>
+
+          <article class="card card--category card--featured reveal" style="--d:.1s">
+            <span class="card__tag">Класика</span>
+            <div class="card__badge">МКПП</div>
+            <h3>Механічна коробка передач</h3>
+            <p>Повний контроль над автомобілем і впевненість на будь-якому авто. Навчимо плавно рушати та перемикати передачі.</p>
+            <ul class="card__list">
+              <li>Робота зі зчепленням</li>
+              <li>Рух у місті та на схилах</li>
+              <li>Паркування та маневри</li>
+            </ul>
+            <button class="card__link" type="button" data-open-modal data-category="МКПП">Записатися →</button>
+          </article>
+
+          <article class="card card--category reveal" style="--d:.2s">
+            <div class="card__badge">АКПП</div>
+            <h3>Автоматична коробка передач</h3>
+            <p>Комфортний старт для тих, хто хоче швидко освоїтися за кермом і зосередитись на ситуації на дорозі.</p>
+            <ul class="card__list">
+              <li>Простіше керування</li>
+              <li>Більше уваги до дороги</li>
+              <li>Комфортне міське водіння</li>
+            </ul>
+            <button class="card__link" type="button" data-open-modal data-category="АКПП">Записатися →</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- АВТОМОБІЛІ -->
+    <section class="section" id="cars">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow reveal">Автомобілі</span>
+          <h2 class="section__title reveal">Навчальний автопарк</h2>
+          <p class="section__lead reveal">Демонстраційні картки автомобілів. У реальному проєкті тут буде актуальний автопарк автошколи.</p>
+        </div>
+
+        <div class="grid grid--3">
+          <article class="car reveal">
+            <div class="car__img">
+              <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=800&q=75" alt="Компактний навчальний автомобіль" loading="lazy" width="800" height="530" data-fallback="Компактний хетчбек">
+              <span class="chip">МКПП</span>
+            </div>
+            <div class="car__body">
+              <h3>Компактний хетчбек</h3>
+              <p>Легкий у керуванні автомобіль для відпрацювання базових навичок: рух, повороти, паркування.</p>
+            </div>
+          </article>
+
+          <article class="car reveal" style="--d:.1s">
+            <div class="car__img">
+              <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=800&q=75" alt="Седан для навчання з автоматичною коробкою" loading="lazy" width="800" height="530" data-fallback="Комфортний седан">
+              <span class="chip chip--alt">АКПП</span>
+            </div>
+            <div class="car__body">
+              <h3>Комфортний седан</h3>
+              <p>Автомобіль з автоматичною коробкою для спокійного старту та впевненого міського водіння.</p>
+            </div>
+          </article>
+
+          <article class="car reveal" style="--d:.2s">
+            <div class="car__img">
+              <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=800&q=75" alt="Сучасний автомобіль для практичних занять" loading="lazy" width="800" height="530" data-fallback="Сучасний кросовер">
+              <span class="chip">МКПП</span>
+            </div>
+            <div class="car__body">
+              <h3>Сучасний кросовер</h3>
+              <p>Просторий автомобіль з гарним оглядом: зручний для практики руху в різних дорожніх умовах.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ПЕРЕВАГИ -->
+    <section class="section section--dark" id="advantages">
+      <div class="container">
+        <div class="section__head section__head--light">
+          <span class="eyebrow eyebrow--light reveal">Переваги</span>
+          <h2 class="section__title reveal">Чому обирають DRIVE SCHOOL</h2>
+          <p class="section__lead reveal">Ми зробили навчання зрозумілим, зручним і спокійним.</p>
+        </div>
+
+        <div class="grid grid--4">
+          <article class="feature reveal">
+            <span class="feature__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+            </span>
+            <h3>Індивідуальний підхід</h3>
+            <p>Враховуємо ваш темп, досвід і рівень впевненості. Жодного шаблонного навчання.</p>
+          </article>
+          <article class="feature reveal" style="--d:.08s">
+            <span class="feature__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            </span>
+            <h3>Зручний графік</h3>
+            <p>Заняття у зручний для вас час: вранці, ввечері або у вихідні.</p>
+          </article>
+          <article class="feature reveal" style="--d:.16s">
+            <span class="feature__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="2.5"/><path d="M12 3v6.5M12 14.5V21M3.5 10.5l6.2 1.3M14.3 12.2l6.2 1.3"/></svg>
+            </span>
+            <h3>Практичні заняття</h3>
+            <p>Більше часу за кермом: реальні маршрути, маневри та паркування.</p>
+          </article>
+          <article class="feature reveal" style="--d:.24s">
+            <span class="feature__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.7A8 8 0 1 1 21 12z"/><path d="M9 11h6M9 14h4"/></svg>
+            </span>
+            <h3>Підтримка учнів</h3>
+            <p>Відповідаємо на запитання, допомагаємо з підготовкою та підтримуємо перед іспитом.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ВІДГУКИ -->
+    <section class="section" id="reviews">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow reveal">Відгуки</span>
+          <h2 class="section__title reveal">Що можуть казати учні</h2>
+          <p class="notice reveal">Увага: це демонстраційні приклади відгуків. Вони не належать реальним людям.</p>
+        </div>
+
+        <div class="grid grid--3">
+          <figure class="review reveal">
+            <span class="review__demo">Приклад відгуку</span>
+            <div class="stars" aria-label="Оцінка 5 із 5">★★★★★</div>
+            <blockquote>Інструктор пояснював спокійно й зрозуміло, тому страх перед дорогою зник уже після кількох занять.</blockquote>
+            <figcaption><span class="avatar" aria-hidden="true">А</span><div><strong>Ім’я учня</strong><small>Категорія B, МКПП</small></div></figcaption>
+          </figure>
+          <figure class="review reveal" style="--d:.1s">
+            <span class="review__demo">Приклад відгуку</span>
+            <div class="stars" aria-label="Оцінка 5 із 5">★★★★★</div>
+            <blockquote>Графік підлаштували під мою роботу. Заняття проходили у зручний час, без поспіху й нервів.</blockquote>
+            <figcaption><span class="avatar avatar--alt" aria-hidden="true">О</span><div><strong>Ім’я учня</strong><small>Категорія B, АКПП</small></div></figcaption>
+          </figure>
+          <figure class="review reveal" style="--d:.2s">
+            <span class="review__demo">Приклад відгуку</span>
+            <div class="stars" aria-label="Оцінка 5 із 5">★★★★★</div>
+            <blockquote>Багато практики в місті. Після навчання я почуваюся впевнено і на вузьких вулицях, і на паркуванні.</blockquote>
+            <figcaption><span class="avatar avatar--light" aria-hidden="true">М</span><div><strong>Ім’я учня</strong><small>Категорія B, МКПП</small></div></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <div class="container cta__inner reveal">
+        <div>
+          <h2>Готові сісти за кермо?</h2>
+          <p>Залиште заявку — ми зв’яжемося та підберемо зручний формат навчання.</p>
+        </div>
+        <button class="btn btn--light btn--lg" type="button" data-open-modal>Записатися на навчання</button>
+      </div>
+    </section>
+
+    <!-- КОНТАКТИ -->
+    <section class="section" id="contacts">
+      <div class="container contacts">
+        <div class="contacts__info">
+          <span class="eyebrow reveal">Контакти</span>
+          <h2 class="section__title reveal">Зв’яжіться з нами</h2>
+          <p class="reveal">Демонстраційні контактні дані. У реальному проєкті тут будуть актуальні дані автошколи.</p>
+
+          <ul class="contact-list">
+            <li class="reveal">
+              <span class="contact-list__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
+              <div><small>Адреса</small><strong>м. Ірпінь</strong></div>
+            </li>
+            <li class="reveal" style="--d:.08s">
+              <span class="contact-list__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></span>
+              <div><small>Телефон</small><strong>+380 XX XXX XX XX</strong></div>
+            </li>
+          </ul>
+
+          <div class="socials reveal" style="--d:.16s">
+            <a class="btn btn--primary" href="https://t.me/example_drive_school" target="_blank" rel="noopener noreferrer">Telegram</a>
+            <a class="btn btn--outline" href="https://instagram.com/example_drive_school" target="_blank" rel="noopener noreferrer">Instagram</a>
+          </div>
+          <p class="muted small reveal">Посилання на Telegram та Instagram — демонстраційні.</p>
+        </div>
+
+        <div class="contacts__card reveal">
+          <h3>Швидка заявка</h3>
+          <p>Натисніть кнопку, щоб відкрити форму запису на навчання.</p>
+          <button class="btn btn--primary btn--lg btn--block" type="button" data-open-modal>Відкрити форму заявки</button>
+          <div class="contacts__decor" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ПІДВАЛ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#home" class="logo logo--light"><span class="logo__mark" aria-hidden="true"><svg viewBox="0 0 32 32" width="22" height="22"><path d="M5 20l3-7h16l3 7v4h-3v-2H8v2H5z" fill="currentColor"/></svg></span><span class="logo__text">DRIVE<span> SCHOOL</span></span></a>
+      <p>© <span id="year">2026</span> DRIVE SCHOOL. Демонстраційний сайт. Усі дані вигадані.</p>
+      <a href="#home" class="footer__up">Нагору ↑</a>
+    </div>
+  </footer>
+
+  <!-- МОДАЛЬНЕ ВІКНО: ФОРМА ЗАЯВКИ -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal__overlay" data-close-modal></div>
+    <div class="modal__box">
+      <button class="modal__close" type="button" aria-label="Закрити" data-close-modal>×</button>
+
+      <div class="modal__content" id="form-view">
+        <h3 id="modal-title">Запис на навчання</h3>
+        <p class="muted">Заповніть форму — це демонстраційна заявка, дані нікуди не надсилаються.</p>
+
+        <form id="lead-form" novalidate>
+          <div class="field">
+            <label for="name">Ім’я</label>
+            <input type="text" id="name" name="name" placeholder="Ваше ім’я" autocomplete="name" required>
+            <span class="field__error" id="name-error" role="alert"></span>
+          </div>
+
+          <div class="field">
+            <label for="phone">Телефон</label>
+            <input type="tel" id="phone" name="phone" placeholder="+380 XX XXX XX XX" autocomplete="tel" inputmode="tel" required>
+            <span class="field__error" id="phone-error" role="alert"></span>
+          </div>
+
+          <div class="field">
+            <label for="category">Напрям навчання</label>
+            <select id="category" name="category">
+              <option value="B">Категорія B</option>
+              <option value="МКПП">Механічна коробка передач</option>
+              <option value="АКПП">Автоматична коробка передач</option>
+            </select>
+          </div>
+
+          <button class="btn btn--primary btn--lg btn--block" type="submit">Надіслати заявку</button>
+        </form>
+      </div>
+
+      <div class="modal__content modal__success" id="success-view" hidden>
+        <div class="success-icon" aria-hidden="true">✓</div>
+        <h3>Дякуємо, <span id="success-name"></span>!</h3>
+        <p>Це демонстраційна відправка: заявку не було надіслано на сервер і жодні дані не збережено.</p>
+        <button class="btn btn--primary" type="button" data-close-modal>Закрити</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
